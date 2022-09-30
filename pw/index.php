@@ -25,7 +25,9 @@ $buku = query("SELECT * FROM buku");
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Buku</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -52,7 +54,7 @@ $buku = query("SELECT * FROM buku");
         <td><?= $row["penerbit_buku"]; ?> </td>
         <td>
         <a href="ubah.php?id=<?= $row['id_buku']; ?>">ubah</a>
-          <a href="hapus.php?id=<?= $row['id_buku']; ?>" onclick="return confirm('apakah anda yakin?');">hapus</a></li>
+        <a href="hapus.php?id=<?= $row['id_buku']; ?>" onclick="return confirm('apakah anda yakin?');">hapus</a></li>
         </td>
         </tr>
     <?php endforeach; ?>
