@@ -30,7 +30,7 @@ $buku = query("SELECT * FROM buku");
 
 <body>
 
-  <h1>Daftar Buku</h1>
+  <h1>Raf store book</h1>
   <a href="tambah.php"> Tambah Buku</a>
   <table border="1" cellpading="10" cellspacing="0">
     <tr>
