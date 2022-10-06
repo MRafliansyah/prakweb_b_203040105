@@ -16,6 +16,11 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 // tampung ke variabel buku
 $buku = query("SELECT * FROM buku");
+
+// ketika tombol cari di klik
+if(isset($_POST['cari'])) {
+  $buku = cari($_POST['keyword']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +39,12 @@ $buku = query("SELECT * FROM buku");
 
   <h1>Raf store book</h1>
   <a href="tambah.php"> Tambah Buku</a>
+  <br>
+  <form action="" method="POST">
+    <input type="text" name="keyword" size="30" placeholder="masukan pencarian.." autocomplete="of" autofocus>
+    <button type="submit" name="cari">Cari!</button>
+    </from>
+  
   <table border="1" cellpading="10" cellspacing="0">
     <tr>
       <th>No</th>
