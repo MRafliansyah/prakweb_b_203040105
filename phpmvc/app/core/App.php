@@ -20,7 +20,7 @@ class App {
 
         // method
         if( isset($url[1]) ){
-            if ( method-exists(object, $url[1]) ) {
+            if ( method-exists($this->controller, $url[1]) ) {
                 $this->method = $url[1];
                 unset($url[1]);
             }
@@ -28,7 +28,7 @@ class App {
 
         // params
         if( !empty($url) ){
-            $array->params = array_values($url);
+            $this->params = array_values($url);
            
         }
 
@@ -36,6 +36,8 @@ class App {
         call_user_func_array([$this->controller,$this->method], $this->params);
 
     }
+
+}
 
     public function parseURL()
     {
@@ -46,4 +48,3 @@ class App {
             return $url;
         }
     }
-}
