@@ -15,7 +15,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="<?= BASEURL; ?>">PHP MVC</a>
+      <a class="navbar-brand" href="<?= BASEURL; ?>">PHPMVC</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,11 @@
           <li class="nav-item">
             <a class="nav-link" href="<?= BASEURL; ?>/about">About</a>
           </li>
-        </div>
-        </li>
+
+
+
+      </div>
+      </li>
       </ul>
     </div>
   </nav>
