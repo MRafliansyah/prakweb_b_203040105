@@ -15,6 +15,9 @@ class Mahasiswa_model
 
 
 
+
+
+  
   public function getAllMahasiswa()
   {
     $this->db->query('SELECT * FROM ' . $this->table);
