@@ -7,7 +7,7 @@
 
           <li class="list-group-item d-flex justify-content-between align-items-conter">
             <?= $mhs['nama']; ?>
-            <a href="<?= BASEURL ?>/mahasiswa/detail/<?= $mhs['id'] ?>" class="badge badge-primary">detail</a>
+            <a href="<?= BASEURL; ?>/mahasiswa/detail/<?= $mhs['id'] ?>" class="badge badge-primary">detail</a>
 
           </li>
 
